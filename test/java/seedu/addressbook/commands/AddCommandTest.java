@@ -139,7 +139,7 @@ public class AddCommandTest {
         CommandResult result = command.execute();
 
         assertFalse(result.getRelevantPersons().isPresent());
-        assertEquals(AddCommand.MESSAGE_DUPLICATE_PERSON, result.getfeedbackToUser();
+        assertEquals(AddCommand.MESSAGE_DUPLICATE_PERSON, result.getfeedbackToUser());
         UniquePersonList people = book.getAllPersons();
         assertTrue(people.contains(p));
         assertEquals(1, people.immutableListView().size());
