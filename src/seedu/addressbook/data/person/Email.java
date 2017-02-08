@@ -21,6 +21,12 @@ public class Email {
      *
      * @throws IllegalValueException if given email address string is invalid.
      */
+    
+
+    public String getPrintableString(){
+    	return "Email:"+this.toString();
+    }
+    
     public Email(String email, boolean isPrivate) throws IllegalValueException {
         this.isPrivate = isPrivate;
         String trimmedEmail = email.trim();

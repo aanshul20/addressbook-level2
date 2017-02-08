@@ -28,7 +28,11 @@ public class Name {
         }
         this.fullName = trimmedName;
     }
+    
 
+    public String getPrintableString(){
+    	return "Name:"+this.toString();
+    }
     /**
      * Returns true if a given string is a valid person name.
      */

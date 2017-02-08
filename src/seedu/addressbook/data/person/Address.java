@@ -29,6 +29,9 @@ public class Address {
         this.value = trimmedAddress;
     }
 
+    public String getPrintableString(){
+    	return "Address:"+this.toString();
+    }
     /**
      * Returns true if a given string is a valid person email.
      */
